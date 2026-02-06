@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Baby Registry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffeef8 0%, #e8f5f7 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            color: #5a5a5a;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1em;
+        }
+
+        .registry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .registry-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .registry-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .registry-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .registry-content {
+            padding: 20px;
+        }
+
+        .registry-title {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .registry-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        /* Placeholder image styling */
+        .placeholder-img {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #ffd6e8 0%, #c4e7f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍼 Our Baby Registry 👶</h1>
+            <p class="subtitle">Thank you for celebrating with us!</p>
+        </header>
+
+        <div class="registry-grid">
+            <!-- Registry Card 1 -->
+            <a href="https://www.amazon.com/baby-reg/your-registry-link" class="registry-card" target="_blank">
+                <div class="placeholder-img">🛍️</div>
+                <div class="registry-content">
+                    <h2 class="registry-title">Amazon Registry</h2>
+                    <p class="registry-description">Find all our nursery essentials, toys, and everyday baby items.</p>
+                </div>
+            </a>
+
+            <!-- Registry Card 2 -->
+            <a href="https://www.target.com/gift-registry/your-registry-link" class="registry-card" target="_blank">
+                <div class="placeholder-img">🎯</div>
+                <div class="registry-content">
+                    <h2 class="registry-title">Target Registry</h2>
+                    <p class="registry-description">Everything from clothes to gear for our little one.</p>
+                </div>
+            </a>
+
+            <!-- Registry Card 3 -->
+            <a href="https://www.buybuybaby.com/store/giftregistry/your-registry-link" class="registry-card" target="_blank">
+                <div class="placeholder-img">👶</div>
+                <div class="registry-content">
+                    <h2 class="registry-title">Buy Buy Baby</h2>
+                    <p class="registry-description">Specialty baby items and nursery furniture.</p>
+                </div>
+            </a>
+
+            <!-- Registry Card 4 -->
+            <a href="https://www.babylist.com/your-registry-link" class="registry-card" target="_blank">
+                <div class="placeholder-img">📝</div>
+                <div class="registry-content">
+                    <h2 class="registry-title">Babylist</h2>
+                    <p class="registry-description">Our universal registry with items from everywhere.</p>
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            <p>We can't wait to meet our little one! 💕</p>
+        </footer>
+    </div>
+</body>
+</html>
