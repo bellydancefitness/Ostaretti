@@ -1,1 +1,1 @@
-Landong page for Ostaretti.com
+Landing page for Ostaretti.com
